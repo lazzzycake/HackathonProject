@@ -5,37 +5,63 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.List;
+
 public class SearchWebDevelopment extends BaseTest {
 
-    SoftAssert softAssert;
+    SoftAssert softAssert = new SoftAssert();
     HomePage homePage;
     WebDevelopment webDevelopment;
 
     @Test(priority = 1)
     public void verifyWebsiteLaunch(){
-        Assert.assertTrue(driver.getTitle().contains("Coursera"),"Coursera website is launched");
+        softAssert.assertTrue(driver.getTitle().contains("Coursera"),"Coursera website is launched");
     }
 
     @Test(priority = 2,dependsOnMethods = "verifyWebsiteLaunch")
     public void verifySearchForWebDevelopmentCourses(){
         homePage = new HomePage(driver);
         homePage.search("Web Development");
-        Assert.assertTrue(driver.getPageSource().toLowerCase().contains("web development"),"The search results are Web Development courses.");
+        softAssert.assertTrue(driver.getPageSource().toLowerCase().contains("web development"),"The search results are Web Development courses.");
     }
 
-    @Test(priority = 3, dependsOnMethods = "verifySearchForWebDevelopmentCourses")
+    @Test(priority = 3, dependsOnMethods = "verifySearchForWebDevelopmentCourses", groups = "filters")
     public void verifyBeginnerLevel(){
         webDevelopment = new WebDevelopment(driver);
         webDevelopment.setLevel();
-        Assert.assertTrue(driver.getPageSource().toLowerCase().contains("beginner"),"The level is set to beginner.");
+        softAssert.assertTrue(driver.getPageSource().toLowerCase().contains("beginner"),"The level is set to beginner.");
     }
 
-    @Test(priority = 4,dependsOnMethods = "verifySearchForWebDevelopmentCourses")
+    @Test(priority = 4,dependsOnMethods = "verifySearchForWebDevelopmentCourses", groups = "filters")
     public void verifyLanguageLevel(){
         webDevelopment = new WebDevelopment(driver);
         webDevelopment.setLanguage();
-        Assert.assertTrue(driver.getPageSource().toLowerCase().contains("english"),"The language is set to English.");
+        softAssert.assertTrue(driver.getPageSource().toLowerCase().contains("english"),"The language is set to English.");
     }
 
+    @Test( dependsOnGroups = "filters")
+    public void verifyNamesExtracted(){
+        webDevelopment = new WebDevelopment(driver);
+        List<String> names = webDevelopment.getCourseName();
+        softAssert.assertEquals(names.size(), 2);
+    }
 
+    @Test(dependsOnGroups = "filters")
+    public void verifyRatingExtracted(){
+        webDevelopment = new WebDevelopment(driver);
+        List<String> ratingList = webDevelopment.getRatings();
+        softAssert.assertEquals(ratingList.size(),2);
+        System.out.println(ratingList.get(0));
+        System.out.println(ratingList.get(1));
+    }
+
+    @Test(dependsOnGroups = "filters")
+    public void verifyDurationOfCourse(){
+        webDevelopment = new WebDevelopment(driver);
+        List<String> duration = webDevelopment.getLearningHours();
+        softAssert.assertEquals(duration.size(),2);
+        System.out.println(duration.get(0));
+        System.out.println(duration.get(1));
+
+    }
 }
