@@ -1,7 +1,6 @@
 import Base.BaseTest;
 import Pages.HomePage;
 import Pages.WebDevelopment;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -62,6 +61,5 @@ public class SearchWebDevelopment extends BaseTest {
         softAssert.assertEquals(duration.size(),2);
         System.out.println(duration.get(0));
         System.out.println(duration.get(1));
-
     }
 }
