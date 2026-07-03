@@ -1,11 +1,16 @@
 package Pages;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class LanguageLearning {
@@ -13,12 +18,14 @@ public class LanguageLearning {
     WebDriver driver;
     HomePage page;
     Actions actions;
+
     public LanguageLearning(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
         actions=new Actions(driver);
     }
-
+    @FindBy(xpath = "//button[@data-testid = 'filter-view-button']")
+    WebElement viewButton;
     @FindBy(xpath = "//button[@data-testid='filter-dropdown-language']")
     WebElement languageDropdown;
 
@@ -37,14 +44,22 @@ public class LanguageLearning {
     public void openLanguageSection(){
         actions.scrollToElement(languageDropdown).perform();
         languageDropdown.click();
+
     }
 
     public void openLevelSection(){
-        actions.scrollToElement(levelDropdown).perform();
-        levelDropdown.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        JavascriptExecutor  js =  (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(false);" ,levelDropdown);
+        wait.until(ExpectedConditions.elementToBeClickable(levelDropdown));
+         levelDropdown.click();
     }
 
+    private int languageCount;
+
     public void displayLanguages(){
+
+        languageCount = languageList.size();
 
         for(WebElement language : languageList){
 
@@ -54,9 +69,14 @@ public class LanguageLearning {
                 System.out.println(text);
             }
         }
+
+        viewButton.click();
     }
 
+    private int levelCount;
     public void displayLevels(){
+
+        levelCount = levelList.size();
 
         for(WebElement level : levelList){
 
@@ -68,12 +88,15 @@ public class LanguageLearning {
         }
     }
 
+
+
     public int getLanguageSize(){
-        return languageList.size();
+        return languageCount;
     }
 
+
     public int getLevelCount() {
-        return levelList.size();
+        return levelCount;
     }
 
 
