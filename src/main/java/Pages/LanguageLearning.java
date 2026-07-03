@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,12 +12,14 @@ public class LanguageLearning {
 
     WebDriver driver;
     HomePage page;
+    Actions actions;
     public LanguageLearning(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        actions=new Actions(driver);
     }
 
-    @FindBy(xpath = "//div[contains(text(),'Language')]")
+    @FindBy(xpath = "//button[@data-testid='filter-dropdown-language']")
     WebElement languageDropdown;
 
     @FindBy(xpath = "//div[contains(text(),'Level')]")
@@ -32,10 +35,12 @@ public class LanguageLearning {
 
 
     public void openLanguageSection(){
+        actions.scrollToElement(languageDropdown).perform();
         languageDropdown.click();
     }
 
     public void openLevelSection(){
+        actions.scrollToElement(levelDropdown).perform();
         levelDropdown.click();
     }
 
