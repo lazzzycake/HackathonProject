@@ -1,0 +1,7 @@
+<suite name = "Suite1">
+    <test name = "Run1">
+        <classes>
+            <class name = "SearchWebDevelopment"/>
+        </classes>
+    </test>
+</suite>
