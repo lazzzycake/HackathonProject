@@ -1,6 +1,5 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,14 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WebDevelopment {
-    public WebDriver driver;
-    Actions actions;
+public class WebDevelopment extends BasePage{
 
     public WebDevelopment(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver, this);
-        actions = new Actions(driver);
+        super(driver);
     }
 
     @FindBy(xpath="//div[contains(text(),'Level')]")
@@ -79,7 +74,7 @@ public class WebDevelopment {
         List<String> timeTaken = new ArrayList<>();
         for(int i=0;i<2;i++){
             String[] parts = timeData.get(i).getText().split("·");
-            String time = parts[2].trim();
+            String time = parts[parts.length - 1].trim();
             timeTaken.add(time);
         }
         return timeTaken;

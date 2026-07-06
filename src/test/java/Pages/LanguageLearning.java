@@ -1,7 +1,6 @@
 package Pages;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,16 +12,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class LanguageLearning {
+public class LanguageLearning extends BasePage{
 
-    WebDriver driver;
+//    WebDriver driver;
     HomePage page;
-    Actions actions;
+//    Actions actions;
 
     public LanguageLearning(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-        actions=new Actions(driver);
+        super(driver);
+//        actions=new Actions(driver);
     }
     @FindBy(xpath = "//button[@data-testid = 'filter-view-button']")
     WebElement viewButton;
@@ -52,7 +50,7 @@ public class LanguageLearning {
         JavascriptExecutor  js =  (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(false);" ,levelDropdown);
         wait.until(ExpectedConditions.elementToBeClickable(levelDropdown));
-         levelDropdown.click();
+        levelDropdown.click();
     }
 
     private int languageCount;

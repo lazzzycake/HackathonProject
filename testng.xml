@@ -1,8 +1,0 @@
-<suite name = "Suite1">
-    <test name = "Run1">
-        <classes>
-            <class name = "SearchWebDevelopment"/>
-            <class name ="ExtractAllLanguages"/>
-        </classes>
-    </test>
-</suite>

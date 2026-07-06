@@ -1,3 +1,5 @@
+package TestCases;
+
 import Base.BaseTest;
 import Pages.Enterprise;
 import org.testng.annotations.Test;
