@@ -1,9 +1,4 @@
-20:48:09.927 [main] WARN  listener.TestListener - test case skipped :verifyerrorMsg
-20:48:09.949 [main] INFO  listener.TestListener - starting Test :verifyLanguageLevel
-20:48:09.949 [main] WARN  listener.TestListener - test case skipped :verifyLanguageLevel
-20:48:09.951 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
-20:48:09.952 [main] WARN  listener.TestListener - test case skipped :verifyDurationOfCourse
-20:48:09.952 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
-20:48:09.953 [main] WARN  listener.TestListener - test case skipped :verifyNamesExtracted
-20:48:09.954 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
-20:48:09.954 [main] WARN  listener.TestListener - test case skipped :verifyRatingExtracted
+21:43:49.516 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
+21:43:49.538 [main] INFO  TestCases.SearchWebDevelopment - starting verifyRatingExtracted
+21:43:49.662 [main] INFO  TestCases.SearchWebDevelopment - verified verifyRatingExtracted
+21:43:49.662 [main] INFO  listener.TestListener - test successfully completed :verifyRatingExtracted

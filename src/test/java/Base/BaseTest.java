@@ -16,7 +16,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class BaseTest {
-    public static WebDriver driver;
+    public WebDriver driver;
     public Logger logger;
     public Properties properties;
 

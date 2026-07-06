@@ -75,7 +75,7 @@ public class LanguageLearning extends BasePage {
     }
 
     public void openLevelSection() {
-        js.executeScript("arguments[0].scrollIntoView(false);", levelDropdown);
+        js.executeScript("arguments[0].scrollIntoView(true);", levelDropdown);
         levelDropdown.click();
     }
 

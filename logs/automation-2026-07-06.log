@@ -1,70 +1,57 @@
-14:52:33.470 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-14:52:57.199 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-14:58:06.650 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-14:59:39.301 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-15:04:01.963 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-15:12:30.435 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-15:51:53.250 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-16:29:52.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+21:09:59.201 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
+21:09:59.220 [main] WARN  listener.TestListener - test case skipped :verifyDurationOfCourse
+21:09:59.221 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
+21:09:59.222 [main] WARN  listener.TestListener - test case skipped :verifyNamesExtracted
+21:09:59.225 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
+21:09:59.225 [main] WARN  listener.TestListener - test case skipped :verifyRatingExtracted
+21:41:19.509 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497801\Downloads\HackathonProject\mastertestng.xml
 
-16:30:21.076 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
-16:30:45.081 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
-16:30:58.414 [main] INFO  TestCases.ExtractAllLanguages - starting verifySearch
-16:31:16.215 [main] INFO  TestCases.ExtractAllLanguages - verified verifySearch
-16:31:27.857 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-16:31:27.942 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-16:31:27.960 [main] INFO  TestCases.EnterpriseForm - starting verifyFormFill
-16:31:31.296 [main] INFO  TestCases.EnterpriseForm - verified verifyFormFill
-16:31:31.303 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLanguageExtracted
-16:31:40.062 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLanguageExtracted
-16:31:40.067 [main] INFO  TestCases.SearchWebDevelopment - starting verify SearchForWebDevelopmentCourses
-16:31:47.454 [main] INFO  TestCases.SearchWebDevelopment - verified SearchForWebDevelopmentCourses
-16:31:47.460 [main] INFO  TestCases.SearchWebDevelopment - starting BeginnerLevel
-16:31:48.532 [main] INFO  TestCases.SearchWebDevelopment - verified verifyBeginnerLevel
-16:31:48.540 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLevelExtracted
-16:31:49.318 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLevelExtracted
-16:31:54.565 [main] INFO  TestCases.EnterpriseForm - starting verifyerrorMsg
-16:31:54.641 [main] INFO  TestCases.EnterpriseForm - verified verifyerrorMsg
-16:32:00.040 [main] INFO  TestCases.SearchWebDevelopment -  starting verifyLanguageLevel
-16:32:00.756 [main] INFO  TestCases.SearchWebDevelopment - verified verifyLanguageLevel
-16:32:00.764 [main] INFO  TestCases.SearchWebDevelopment - starting verifyDurationOfCourse
-16:32:01.280 [main] INFO  TestCases.SearchWebDevelopment - verified verifyDurationOfCourse
-16:32:01.289 [main] INFO  TestCases.SearchWebDevelopment - starting verifyNamesExtracted
-16:32:01.355 [main] INFO  TestCases.SearchWebDevelopment - verified verifyNamesExtracted
-16:32:01.359 [main] INFO  TestCases.SearchWebDevelopment - starting verifyRatingExtracted
-16:32:01.464 [main] INFO  TestCases.SearchWebDevelopment - verified verifyRatingExtracted
-20:47:50.111 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497801\Downloads\HackathonProject\mastertestng.xml
-
-20:47:58.435 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
-20:47:58.436 [main] WARN  listener.TestListener - test case skipped :verifyEnterprise
-20:48:05.876 [main] INFO  listener.TestListener - starting Test :verifySearch
-20:48:05.877 [main] WARN  listener.TestListener - test case skipped :verifySearch
-20:48:09.901 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
-20:48:09.902 [main] WARN  listener.TestListener - test case skipped :verifyWebsiteLaunch
-20:48:09.906 [main] INFO  listener.TestListener - starting Test :verifyFormFill
-20:48:09.907 [main] WARN  listener.TestListener - test case skipped :verifyFormFill
-20:48:09.908 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
-20:48:09.909 [main] WARN  listener.TestListener - test case skipped :verifyLanguageExtracted
-20:48:09.911 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
-20:48:09.912 [main] WARN  listener.TestListener - test case skipped :verifySearchForWebDevelopmentCourses
-20:48:09.913 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
-20:48:09.914 [main] WARN  listener.TestListener - test case skipped :verifyBeginnerLevel
-20:48:09.917 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
-20:48:09.918 [main] WARN  listener.TestListener - test case skipped :verifyLevelExtracted
-20:48:09.925 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg
+21:41:30.819 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
+21:41:30.821 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+21:41:48.653 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+21:41:48.660 [main] INFO  listener.TestListener - test successfully completed :verifyEnterprise
+21:41:59.980 [main] INFO  listener.TestListener - starting Test :verifySearch
+21:41:59.984 [main] INFO  TestCases.ExtractAllLanguages - starting verifySearch
+21:42:14.802 [main] INFO  TestCases.ExtractAllLanguages - verified verifySearch
+21:42:14.806 [main] INFO  listener.TestListener - test successfully completed :verifySearch
+21:42:33.212 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
+21:42:33.212 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+21:42:33.241 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+21:42:33.243 [main] INFO  listener.TestListener - test successfully completed :verifyWebsiteLaunch
+21:42:33.260 [main] INFO  listener.TestListener - starting Test :verifyFormFill
+21:42:33.260 [main] INFO  TestCases.EnterpriseForm - starting verifyFormFill
+21:42:40.776 [main] INFO  TestCases.EnterpriseForm - verified verifyFormFill
+21:42:40.778 [main] INFO  listener.TestListener - test successfully completed :verifyFormFill
+21:42:40.790 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
+21:42:40.796 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLanguageExtracted
+21:42:54.178 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLanguageExtracted
+21:42:54.180 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageExtracted
+21:42:54.183 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
+21:42:54.184 [main] INFO  TestCases.SearchWebDevelopment - starting verify SearchForWebDevelopmentCourses
+21:43:17.249 [main] INFO  TestCases.SearchWebDevelopment - verified SearchForWebDevelopmentCourses
+21:43:17.251 [main] INFO  listener.TestListener - test successfully completed :verifySearchForWebDevelopmentCourses
+21:43:17.255 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
+21:43:17.256 [main] INFO  TestCases.SearchWebDevelopment - starting BeginnerLevel
+21:43:20.220 [main] INFO  TestCases.SearchWebDevelopment - verified verifyBeginnerLevel
+21:43:20.222 [main] INFO  listener.TestListener - test successfully completed :verifyBeginnerLevel
+21:43:20.228 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
+21:43:20.229 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLevelExtracted
+21:43:21.958 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLevelExtracted
+21:43:21.959 [main] INFO  listener.TestListener - test successfully completed :verifyLevelExtracted
+21:43:34.795 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg
+21:43:34.796 [main] INFO  TestCases.EnterpriseForm - starting verifyerrorMsg
+21:43:35.000 [main] INFO  TestCases.EnterpriseForm - verified verifyerrorMsg
+21:43:35.001 [main] INFO  listener.TestListener - test successfully completed :verifyerrorMsg
+21:43:45.753 [main] INFO  listener.TestListener - starting Test :verifyLanguageLevel
+21:43:45.754 [main] INFO  TestCases.SearchWebDevelopment -  starting verifyLanguageLevel
+21:43:48.920 [main] INFO  TestCases.SearchWebDevelopment - verified verifyLanguageLevel
+21:43:48.922 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageLevel
+21:43:48.928 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
+21:43:48.929 [main] INFO  TestCases.SearchWebDevelopment - starting verifyDurationOfCourse
+21:43:49.385 [main] INFO  TestCases.SearchWebDevelopment - verified verifyDurationOfCourse
+21:43:49.387 [main] INFO  listener.TestListener - test successfully completed :verifyDurationOfCourse
+21:43:49.391 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
+21:43:49.392 [main] INFO  TestCases.SearchWebDevelopment - starting verifyNamesExtracted
+21:43:49.513 [main] INFO  TestCases.SearchWebDevelopment - verified verifyNamesExtracted
+21:43:49.514 [main] INFO  listener.TestListener - test successfully completed :verifyNamesExtracted

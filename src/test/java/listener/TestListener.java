@@ -1,6 +1,8 @@
 package listener;
 
+import Base.BaseTest;
 import Utilities.screenShotUtil;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -11,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 public class TestListener implements ITestListener {
 
 private static final Logger logger = LogManager.getLogger(TestListener.class);
+
 
 @Override
 public void onTestStart(ITestResult result){
@@ -24,9 +27,14 @@ logger.info("test successfully completed :" + result.getName());
 
 @Override
 public void onTestFailure(ITestResult result) {
+ Object currentClass = result.getInstance();
+
+    WebDriver driver =
+            ((BaseTest) currentClass).driver;
+
 logger.error("test failed :" + result.getName());
 try{
-screenShotUtil.captureScreenShot(result.getName());
+screenShotUtil.captureScreenShot(driver,result.getName());
 logger.info("Screenshot captured");
 
 }
