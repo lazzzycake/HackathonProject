@@ -1,0 +1,68 @@
+22:36:15.542 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+22:36:15.570 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+22:38:49.750 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+22:38:54.871 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+22:38:54.888 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+22:56:09.740 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml] otherwise TestNG may fail or not work as expected.
+22:56:09.984 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml
+
+22:57:00.592 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+22:57:00.610 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+22:58:19.867 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml] otherwise TestNG may fail or not work as expected.
+22:58:20.086 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml
+
+22:58:55.587 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+22:58:55.821 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:09:57.607 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+23:10:02.798 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:10:02.817 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:10:17.791 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:10:17.803 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:10:40.860 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+23:10:46.113 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:10:46.130 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:11:08.497 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:11:08.516 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:13:52.387 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+23:13:57.894 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:13:58.053 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:13:58.440 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:13:58.478 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+23:33:53.953 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+23:38:36.308 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+23:39:26.328 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+23:39:26.393 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+10:30:40.056 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+10:32:07.949 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+10:32:09.973 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+11:05:26.780 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+11:06:58.488 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+11:06:58.707 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+12:11:47.806 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+12:12:02.528 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+12:12:03.076 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+12:12:03.595 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+12:12:03.740 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+14:52:11.284 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+

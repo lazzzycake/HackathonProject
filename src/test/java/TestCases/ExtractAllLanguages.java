@@ -6,6 +6,8 @@ import Pages.LanguageLearning;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.io.IOException;
+
 public class ExtractAllLanguages extends BaseTest {
 
     SoftAssert softAssert = new SoftAssert();
@@ -21,7 +23,7 @@ public class ExtractAllLanguages extends BaseTest {
     }
 
     @Test(priority = 2, dependsOnMethods = "verifySearch")
-    public void verifyLanguageExtracted() {
+    public void verifyLanguageExtracted() throws IOException {
         learning  = new LanguageLearning(driver);
         learning.openLanguageSection();
         learning.displayLanguages();
@@ -30,12 +32,11 @@ public class ExtractAllLanguages extends BaseTest {
     }
 
    @Test(priority =  3 , dependsOnMethods = "verifySearch")
-   public void verifyLevelExtracted(){
+   public void verifyLevelExtracted() throws IOException {
        learning  = new LanguageLearning(driver);
        learning.openLevelSection();
        learning.displayLevels();
        softAssert.assertTrue(learning.getLevelCount() > 0, "levels not extracted");
        softAssert.assertAll();
-}
-
+   }
 }

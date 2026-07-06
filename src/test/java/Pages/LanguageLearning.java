@@ -1,101 +1,113 @@
 package Pages;
 
+import Utilities.ExcelUtility;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
+import java.io.IOException;
 import java.util.List;
 
-public class LanguageLearning extends BasePage{
+public class LanguageLearning extends BasePage {
 
-//    WebDriver driver;
     HomePage page;
-//    Actions actions;
+    private int languageCount;
+    private int levelCount;
 
-    public LanguageLearning(WebDriver driver){
+    public LanguageLearning(WebDriver driver) {
         super(driver);
-//        actions=new Actions(driver);
     }
+
     @FindBy(xpath = "//button[@data-testid = 'filter-view-button']")
     WebElement viewButton;
+
     @FindBy(xpath = "//button[@data-testid='filter-dropdown-language']")
     WebElement languageDropdown;
 
     @FindBy(xpath = "//div[contains(text(),'Level')]")
     WebElement levelDropdown;
 
-    // Update these locators after inspecting the page
     @FindBy(xpath = "//div[contains(@data-testid,'language:')]")
     List<WebElement> languageList;
 
     @FindBy(xpath = "//div[contains(@data-testid,'productDifficultyLevel')]")
     List<WebElement> levelList;
 
-
-
-    public void openLanguageSection(){
+    public void openLanguageSection() {
         actions.scrollToElement(languageDropdown).perform();
         languageDropdown.click();
-
     }
 
-    public void openLevelSection(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        JavascriptExecutor  js =  (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(false);" ,levelDropdown);
-        wait.until(ExpectedConditions.elementToBeClickable(levelDropdown));
-        levelDropdown.click();
-    }
-
-    private int languageCount;
-
-    public void displayLanguages(){
-
+    public void displayLanguages() throws IOException {
         languageCount = languageList.size();
 
-        for(WebElement language : languageList){
+        String filePath = System.getProperty("user.dir") + "/DataRetrieved/Languages.xlsx";
+        ExcelUtility excel = new ExcelUtility(filePath);
 
-            String text = language.getText();
+        // Write headers
+        excel.writeCell("Sheet1", 0, 0, "Language");
+        excel.writeCell("Sheet1", 0, 1, "Course Count");
 
-            if(!text.isEmpty()){
-                System.out.println(text);
+        int rowNum = 1;
+        for (WebElement language : languageList) {
+            String text = language.getText().trim();
+            if (!text.isEmpty()) {
+
+                String name = text;
+                String count = "";
+
+                if (text.contains("(") && text.contains(")")) {
+                    name  = text.substring(0, text.indexOf("(")).trim();
+                    count = text.substring(text.indexOf("(") + 1, text.indexOf(")")).trim();
+                }
+
+                excel.writeCell("Sheet1", rowNum, 0, name);   // Column A → English
+                excel.writeCell("Sheet1", rowNum, 1, count);  // Column B → 11,410
+                rowNum++;
             }
         }
-
         viewButton.click();
     }
 
-    private int levelCount;
-    public void displayLevels(){
-
-        levelCount = levelList.size();
-
-        for(WebElement level : levelList){
-
-            String text = level.getText();
-
-            if(!text.isEmpty()){
-                System.out.println(text);
-            }
-        }
-    }
-
-
-
-    public int getLanguageSize(){
+    public int getLanguageSize() {
         return languageCount;
     }
 
+    public void openLevelSection() {
+        js.executeScript("arguments[0].scrollIntoView(false);", levelDropdown);
+        levelDropdown.click();
+    }
+
+    public void displayLevels() throws IOException {
+        levelCount = levelList.size();
+
+        String filePath = System.getProperty("user.dir") + "/DataRetrieved/Levels.xlsx";
+        ExcelUtility excel = new ExcelUtility(filePath);
+
+        excel.writeCell("Sheet1", 0, 0, "Level");
+        excel.writeCell("Sheet1", 0, 1, "Course Count");
+
+        int rowNum = 1;
+        for (WebElement level : levelList) {
+            String text = level.getText().trim();
+            if (!text.isEmpty()) {
+                String name = text;
+                String count = "";
+
+                if (text.contains("(") && text.contains(")")) {
+                    name  = text.substring(0, text.indexOf("(")).trim();
+                    count = text.substring(text.indexOf("(") + 1, text.indexOf(")")).trim();
+                }
+
+                excel.writeCell("Sheet1", rowNum, 0, name);
+                excel.writeCell("Sheet1", rowNum, 1, count);
+                rowNum++;
+            }
+        }
+    }
 
     public int getLevelCount() {
         return levelCount;
     }
-
-
 }

@@ -5,6 +5,11 @@ import Pages.Enterprise;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 public class EnterpriseForm extends BaseTest {
 
     SoftAssert softassert = new SoftAssert();
@@ -19,9 +24,22 @@ public class EnterpriseForm extends BaseTest {
     }
 
     @Test(priority = 2 , dependsOnMethods = "verifyEnterprise")
-    public void verifyFormFill(){
-    enterprise.formFill("Aditi" , "kushwaha" , "123" , "6768904323","Business" ,"Tester" , "Cognizant", "501-1000","Courses for myself", "India");
-    enterprise.submitForm();
+    public void verifyFormFill() throws IOException {
+        FileReader fileReader = new FileReader("./src/test/resources/config.properties");
+        properties=new Properties();
+        properties.load(fileReader);
+        //enterprise.formFill("Aditi" , "kushwaha" , "123" , "6768904323","Business" ,"Tester" , "Cognizant", "501-1000","Courses for myself", "India");
+        enterprise.enterFirstName(properties.getProperty("firstName"));
+        enterprise.enterLastName(properties.getProperty("lastName"));
+        enterprise.enterEmail(properties.getProperty("Email"));
+        enterprise.enterPhoneNumber(properties.getProperty("phone"));
+        enterprise.enterOrganizationType(properties.getProperty("organizationType"));
+        enterprise.enterJobTitle(properties.getProperty("jobTitle"));
+        enterprise.enterCompanyName(properties.getProperty("company"));
+        enterprise.enterCompanySize(properties.getProperty("size"));
+        enterprise.enterDescription(properties.getProperty("describe"));
+        enterprise.enterCountry(properties.getProperty("Country"));
+        enterprise.submitForm();
     }
 
     @Test(priority = 3 , dependsOnMethods = "verifyFormFill")

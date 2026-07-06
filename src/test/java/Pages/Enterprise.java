@@ -1,25 +1,19 @@
 package Pages;
 
-import Base.BaseTest;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import java.time.Duration;
-
 public class Enterprise extends BasePage {
-//    WebDriver driver;
-    Actions actions;
 
    public Enterprise(WebDriver driver){
        super(driver);
-       actions=new Actions(driver);
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
+   }
+
+   Select select;
+
    @FindBy(linkText = "For Businesses")
    WebElement enterprise;
 
@@ -59,49 +53,86 @@ public class Enterprise extends BasePage {
    @FindBy(xpath = "//div[@id='ValidMsgEmail']")
    WebElement emailErrorMessage;
 
-
    public void clickEnterprise(){
        actions.moveToElement(enterprise).click().perform();
    }
 
-   public void formFill(String fn , String ln ,String email, String phoneNo , String organization,String Title,String companyName , String companySize , String need, String country) {
-
-       actions.scrollToElement(firstName).perform();
-       firstName.sendKeys(fn);
-       lastName.sendKeys(ln);
-       Email.sendKeys(email);
-       phone.sendKeys(phoneNo);
-
-       Select select  = new Select(organizationType);
-       select.selectByValue(organization);
-
-       jobTitle.sendKeys(Title);
-       company.sendKeys(companyName);
-
-       select  = new Select(size);
-       select.selectByVisibleText(companySize);
-
-       select = new Select(describe);
-       select.selectByVisibleText(need);
-
-       select = new Select(Country);
-       select.selectByVisibleText(country);
-
+   public void enterFirstName(String fname){
+       firstName.sendKeys(fname);
    }
 
-       public void submitForm(){
+   public void enterLastName(String lname){
+       lastName.sendKeys(lname);
+   }
 
-           actions.scrollToElement(submit).perform();
+   public void enterEmail(String email){
+       Email.sendKeys(email);
+   }
 
-           JavascriptExecutor js =
-                   (JavascriptExecutor) driver;
+   public void enterPhoneNumber(String phoneNo){
+       phone.sendKeys(phoneNo);
+   }
 
-           js.executeScript("arguments[0].click();", submit);
-       }
+   public void enterOrganizationType(String orgType){
+       select = new Select(organizationType);
+       select.selectByValue(orgType);
+   }
+
+   public void enterJobTitle(String title){
+       jobTitle.sendKeys(title);
+   }
+
+   public void enterCompanyName(String cmpName){
+       company.sendKeys(cmpName);
+   }
+
+   public void enterCompanySize(String cmpSize){
+       select = new Select(size);
+       select.selectByValue(cmpSize);
+   }
+
+   public void enterDescription(String desc){
+       select = new Select(describe);
+       select.selectByValue(desc);
+   }
+
+   public void enterCountry(String country){
+       select = new Select(Country);
+       select.selectByValue(country);
+   }
+
+//    public void formFill(String fn , String ln , String email, String phoneNo , String organization, String Title, String companyName , String companySize , String need, String country) {
+//
+//       actions.scrollToElement(firstName).perform();
+//       firstName.sendKeys(fn);
+//       lastName.sendKeys(ln);
+//       Email.sendKeys(email);
+//       phone.sendKeys(phoneNo);
+//
+//       Select select  = new Select(organizationType);
+//       select.selectByValue(organization);
+//
+//       jobTitle.sendKeys(Title);
+//       company.sendKeys(companyName);
+//
+//       select  = new Select(size);
+//       select.selectByVisibleText(companySize);
+//
+//       select = new Select(describe);
+//       select.selectByVisibleText(need);
+//
+//       select = new Select(Country);
+//       select.selectByVisibleText(country);
+//
+//   }
+
+   public void submitForm(){
+       actions.scrollToElement(submit).perform();
+       js.executeScript("arguments[0].click();", submit);
+   }
 
    public String errorMessage(){
        return emailErrorMessage.getText();
-
    }
 
 }
