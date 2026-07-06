@@ -1,68 +1,70 @@
-22:36:15.542 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-22:36:15.570 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-22:38:49.750 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
-
-22:38:54.871 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-22:38:54.888 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-22:56:09.740 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml] otherwise TestNG may fail or not work as expected.
-22:56:09.984 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml
-
-22:57:00.592 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-22:57:00.610 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-22:58:19.867 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml] otherwise TestNG may fail or not work as expected.
-22:58:20.086 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\testng.xml
-
-22:58:55.587 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-22:58:55.821 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:09:57.607 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
-
-23:10:02.798 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:10:02.817 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:10:17.791 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:10:17.803 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:10:40.860 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
-
-23:10:46.113 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:10:46.130 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:11:08.497 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:11:08.516 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:13:52.387 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
-
-23:13:57.894 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:13:58.053 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:13:58.440 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:13:58.478 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-23:33:53.953 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+14:52:33.470 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
-23:38:36.308 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+14:52:57.199 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
-23:39:26.328 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-23:39:26.393 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-10:30:40.056 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+14:58:06.650 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
-10:32:07.949 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-10:32:09.973 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-11:05:26.780 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+14:59:39.301 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
-11:06:58.488 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-11:06:58.707 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-12:11:47.806 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+15:04:01.963 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
-12:12:02.528 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-12:12:03.076 [TestNG-tests-2] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-12:12:03.595 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
-12:12:03.740 [TestNG-tests-1] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
-14:52:11.284 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+15:12:30.435 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
+15:51:53.250 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+16:29:52.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497801\Downloads\HackathonProject\mastertestng.xml
+
+16:30:21.076 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+16:30:45.081 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+16:30:58.414 [main] INFO  TestCases.ExtractAllLanguages - starting verifySearch
+16:31:16.215 [main] INFO  TestCases.ExtractAllLanguages - verified verifySearch
+16:31:27.857 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+16:31:27.942 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+16:31:27.960 [main] INFO  TestCases.EnterpriseForm - starting verifyFormFill
+16:31:31.296 [main] INFO  TestCases.EnterpriseForm - verified verifyFormFill
+16:31:31.303 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLanguageExtracted
+16:31:40.062 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLanguageExtracted
+16:31:40.067 [main] INFO  TestCases.SearchWebDevelopment - starting verify SearchForWebDevelopmentCourses
+16:31:47.454 [main] INFO  TestCases.SearchWebDevelopment - verified SearchForWebDevelopmentCourses
+16:31:47.460 [main] INFO  TestCases.SearchWebDevelopment - starting BeginnerLevel
+16:31:48.532 [main] INFO  TestCases.SearchWebDevelopment - verified verifyBeginnerLevel
+16:31:48.540 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLevelExtracted
+16:31:49.318 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLevelExtracted
+16:31:54.565 [main] INFO  TestCases.EnterpriseForm - starting verifyerrorMsg
+16:31:54.641 [main] INFO  TestCases.EnterpriseForm - verified verifyerrorMsg
+16:32:00.040 [main] INFO  TestCases.SearchWebDevelopment -  starting verifyLanguageLevel
+16:32:00.756 [main] INFO  TestCases.SearchWebDevelopment - verified verifyLanguageLevel
+16:32:00.764 [main] INFO  TestCases.SearchWebDevelopment - starting verifyDurationOfCourse
+16:32:01.280 [main] INFO  TestCases.SearchWebDevelopment - verified verifyDurationOfCourse
+16:32:01.289 [main] INFO  TestCases.SearchWebDevelopment - starting verifyNamesExtracted
+16:32:01.355 [main] INFO  TestCases.SearchWebDevelopment - verified verifyNamesExtracted
+16:32:01.359 [main] INFO  TestCases.SearchWebDevelopment - starting verifyRatingExtracted
+16:32:01.464 [main] INFO  TestCases.SearchWebDevelopment - verified verifyRatingExtracted
+20:47:50.111 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497801\Downloads\HackathonProject\mastertestng.xml
+
+20:47:58.435 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
+20:47:58.436 [main] WARN  listener.TestListener - test case skipped :verifyEnterprise
+20:48:05.876 [main] INFO  listener.TestListener - starting Test :verifySearch
+20:48:05.877 [main] WARN  listener.TestListener - test case skipped :verifySearch
+20:48:09.901 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
+20:48:09.902 [main] WARN  listener.TestListener - test case skipped :verifyWebsiteLaunch
+20:48:09.906 [main] INFO  listener.TestListener - starting Test :verifyFormFill
+20:48:09.907 [main] WARN  listener.TestListener - test case skipped :verifyFormFill
+20:48:09.908 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
+20:48:09.909 [main] WARN  listener.TestListener - test case skipped :verifyLanguageExtracted
+20:48:09.911 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
+20:48:09.912 [main] WARN  listener.TestListener - test case skipped :verifySearchForWebDevelopmentCourses
+20:48:09.913 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
+20:48:09.914 [main] WARN  listener.TestListener - test case skipped :verifyBeginnerLevel
+20:48:09.917 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
+20:48:09.918 [main] WARN  listener.TestListener - test case skipped :verifyLevelExtracted
+20:48:09.925 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg

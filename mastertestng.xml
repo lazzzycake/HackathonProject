@@ -1,14 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
 
 <suite name = "Suite1">
+    <listeners>
+        <listener class-name="listener.TestListener"/>
+    </listeners>
+
     <test name = "Run1">
         <parameter name = "os" value = "Windows"/>
         <parameter name = "browser" value = "chrome"/>
-
         <classes>
             <class name = "TestCases.SearchWebDevelopment"/>
             <class name ="TestCases.ExtractAllLanguages"/>
             <class name = "TestCases.EnterpriseForm"/>
         </classes>
-    </test>
+  </test>
+
 </suite>
