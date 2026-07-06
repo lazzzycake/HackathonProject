@@ -17,18 +17,20 @@ public class EnterpriseForm extends BaseTest {
 
     @Test(priority = 1)
     public void verifyEnterprise(){
-    enterprise = new Enterprise(driver);
-    enterprise.clickEnterprise();
-    softassert.assertTrue( driver.getCurrentUrl().contains("business"), "For business page not displayed");
+        logger.info("starting verifyEnterprise");
+        enterprise = new Enterprise(driver);
+        enterprise.clickEnterprise();
+        softassert.assertTrue( driver.getCurrentUrl().contains("business"), "For business page not displayed");
         softassert.assertAll();
+        logger.info("verified verifyEnterprise");
     }
 
     @Test(priority = 2 , dependsOnMethods = "verifyEnterprise")
     public void verifyFormFill() throws IOException {
+        logger.info("starting verifyFormFill");
         FileReader fileReader = new FileReader("./src/test/resources/config.properties");
         properties=new Properties();
         properties.load(fileReader);
-        //enterprise.formFill("Aditi" , "kushwaha" , "123" , "6768904323","Business" ,"Tester" , "Cognizant", "501-1000","Courses for myself", "India");
         enterprise.enterFirstName(properties.getProperty("firstName"));
         enterprise.enterLastName(properties.getProperty("lastName"));
         enterprise.enterEmail(properties.getProperty("Email"));
@@ -40,14 +42,17 @@ public class EnterpriseForm extends BaseTest {
         enterprise.enterDescription(properties.getProperty("describe"));
         enterprise.enterCountry(properties.getProperty("Country"));
         enterprise.submitForm();
+        logger.info("verified verifyFormFill");
     }
 
     @Test(priority = 3 , dependsOnMethods = "verifyFormFill")
     public void verifyerrorMsg(){
-     String actualMsg =   enterprise.errorMessage();
-     System.out.println("actual error msg is" + actualMsg);
+        logger.info("starting verifyerrorMsg");
+        String actualMsg =   enterprise.errorMessage();
+        System.out.println("actual error msg is" + actualMsg);
         softassert.assertTrue(actualMsg.contains("Must be valid email"),
                 "Correct validation message not displayed");
         softassert.assertAll();
+        logger.info("verified verifyerrorMsg");
     }
 }

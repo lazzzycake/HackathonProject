@@ -101,30 +101,6 @@ public class Enterprise extends BasePage {
        select.selectByValue(country);
    }
 
-//    public void formFill(String fn , String ln , String email, String phoneNo , String organization, String Title, String companyName , String companySize , String need, String country) {
-//
-//       actions.scrollToElement(firstName).perform();
-//       firstName.sendKeys(fn);
-//       lastName.sendKeys(ln);
-//       Email.sendKeys(email);
-//       phone.sendKeys(phoneNo);
-//
-//       Select select  = new Select(organizationType);
-//       select.selectByValue(organization);
-//
-//       jobTitle.sendKeys(Title);
-//       company.sendKeys(companyName);
-//
-//       select  = new Select(size);
-//       select.selectByVisibleText(companySize);
-//
-//       select = new Select(describe);
-//       select.selectByVisibleText(need);
-//
-//       select = new Select(Country);
-//       select.selectByVisibleText(country);
-//
-//   }
 
    public void submitForm(){
        actions.scrollToElement(submit).perform();

@@ -19,3 +19,32 @@
 15:51:53.250 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
 
+16:29:52.475 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497801\Downloads\HackathonProject\mastertestng.xml
+
+16:30:21.076 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+16:30:45.081 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+16:30:58.414 [main] INFO  TestCases.ExtractAllLanguages - starting verifySearch
+16:31:16.215 [main] INFO  TestCases.ExtractAllLanguages - verified verifySearch
+16:31:27.857 [main] INFO  TestCases.SearchWebDevelopment - Starting verifyWebsiteLaunch
+16:31:27.942 [main] INFO  TestCases.SearchWebDevelopment - Verified verifyWebsiteLaunch
+16:31:27.960 [main] INFO  TestCases.EnterpriseForm - starting verifyFormFill
+16:31:31.296 [main] INFO  TestCases.EnterpriseForm - verified verifyFormFill
+16:31:31.303 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLanguageExtracted
+16:31:40.062 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLanguageExtracted
+16:31:40.067 [main] INFO  TestCases.SearchWebDevelopment - starting verify SearchForWebDevelopmentCourses
+16:31:47.454 [main] INFO  TestCases.SearchWebDevelopment - verified SearchForWebDevelopmentCourses
+16:31:47.460 [main] INFO  TestCases.SearchWebDevelopment - starting BeginnerLevel
+16:31:48.532 [main] INFO  TestCases.SearchWebDevelopment - verified verifyBeginnerLevel
+16:31:48.540 [main] INFO  TestCases.ExtractAllLanguages - starting verifyLevelExtracted
+16:31:49.318 [main] INFO  TestCases.ExtractAllLanguages - verified verifyLevelExtracted
+16:31:54.565 [main] INFO  TestCases.EnterpriseForm - starting verifyerrorMsg
+16:31:54.641 [main] INFO  TestCases.EnterpriseForm - verified verifyerrorMsg
+16:32:00.040 [main] INFO  TestCases.SearchWebDevelopment -  starting verifyLanguageLevel
+16:32:00.756 [main] INFO  TestCases.SearchWebDevelopment - verified verifyLanguageLevel
+16:32:00.764 [main] INFO  TestCases.SearchWebDevelopment - starting verifyDurationOfCourse
+16:32:01.280 [main] INFO  TestCases.SearchWebDevelopment - verified verifyDurationOfCourse
+16:32:01.289 [main] INFO  TestCases.SearchWebDevelopment - starting verifyNamesExtracted
+16:32:01.355 [main] INFO  TestCases.SearchWebDevelopment - verified verifyNamesExtracted
+16:32:01.359 [main] INFO  TestCases.SearchWebDevelopment - starting verifyRatingExtracted
+16:32:01.464 [main] INFO  TestCases.SearchWebDevelopment - verified verifyRatingExtracted
