@@ -1,6 +1,5 @@
 package Utilities;
 
-import Base.BaseTest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -9,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.IOException;
 
-public class screenShotUtil {
+public class ScreenShotUtil {
 
     public static void captureScreenShot( WebDriver driver,String testName) throws IOException {
 

@@ -5,7 +5,6 @@ import Pages.Enterprise;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -27,7 +26,7 @@ public class EnterpriseForm extends BaseTest {
 
     @Test(priority = 2 , dependsOnMethods = "verifyEnterprise")
     public void verifyFormFill() throws IOException {
-        logger.info("starting verifyFormFill");
+
         FileReader fileReader = new FileReader("./src/test/resources/config.properties");
         properties=new Properties();
         properties.load(fileReader);
@@ -42,17 +41,16 @@ public class EnterpriseForm extends BaseTest {
         enterprise.enterDescription(properties.getProperty("describe"));
         enterprise.enterCountry(properties.getProperty("Country"));
         enterprise.submitForm();
-        logger.info("verified verifyFormFill");
     }
 
     @Test(priority = 3 , dependsOnMethods = "verifyFormFill")
     public void verifyerrorMsg(){
-        logger.info("starting verifyerrorMsg");
+
         String actualMsg =   enterprise.errorMessage();
         System.out.println("actual error msg is" + actualMsg);
         softassert.assertTrue(actualMsg.contains("Must be valid email"),
                 "Correct validation message not displayed");
         softassert.assertAll();
-        logger.info("verified verifyerrorMsg");
+
     }
 }

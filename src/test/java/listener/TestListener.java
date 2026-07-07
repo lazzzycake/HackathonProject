@@ -1,7 +1,7 @@
 package listener;
 
 import Base.BaseTest;
-import Utilities.screenShotUtil;
+import Utilities.ScreenShotUtil;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -34,7 +34,7 @@ public void onTestFailure(ITestResult result) {
 
 logger.error("test failed :" + result.getName());
 try{
-screenShotUtil.captureScreenShot(driver,result.getName());
+ScreenShotUtil.captureScreenShot(driver,result.getName());
 logger.info("Screenshot captured");
 
 }
