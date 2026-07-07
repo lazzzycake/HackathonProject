@@ -16,12 +16,12 @@ public class EnterpriseForm extends BaseTest {
 
     @Test(priority = 1)
     public void verifyEnterprise(){
-        logger.info("starting verifyEnterprise");
+
         enterprise = new Enterprise(driver);
         enterprise.clickEnterprise();
         softassert.assertTrue( driver.getCurrentUrl().contains("business"), "For business page not displayed");
         softassert.assertAll();
-        logger.info("verified verifyEnterprise");
+
     }
 
     @Test(priority = 2 , dependsOnMethods = "verifyEnterprise")

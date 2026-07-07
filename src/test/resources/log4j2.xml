@@ -17,7 +17,7 @@
     <Loggers>
         <Root level ="Info"> <!--All < Trace < Debug < Info < Warn < Error < Fatal < Off -->
             <AppenderRef ref = "File"/>
-<!--        <AppenderRef ref = "Console"/>-->
+            <AppenderRef ref = "Console"/>
         </Root>
     </Loggers>
 

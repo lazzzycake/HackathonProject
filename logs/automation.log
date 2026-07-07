@@ -1,29 +1,5 @@
-16:10:13.740 [main] INFO  listener.TestListener - Starting Test: verifyEnterprise
-16:10:13.770 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
-16:10:25.600 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
-16:10:25.607 [main] INFO  listener.TestListener - Test successfully completed: verifyEnterprise
-16:10:33.836 [main] INFO  listener.TestListener - Starting Test: verifySearch
-16:10:42.034 [main] INFO  listener.TestListener - Test successfully completed: verifySearch
-16:10:50.547 [main] INFO  listener.TestListener - Starting Test: verifyWebsiteLaunch
-16:10:50.654 [main] INFO  listener.TestListener - Test successfully completed: verifyWebsiteLaunch
-16:10:50.662 [main] INFO  listener.TestListener - Starting Test: verifyFormFill
-16:10:56.168 [main] INFO  listener.TestListener - Test successfully completed: verifyFormFill
-16:10:56.182 [main] INFO  listener.TestListener - Starting Test: verifyLanguageExtracted
-16:11:12.406 [main] INFO  listener.TestListener - Test successfully completed: verifyLanguageExtracted
-16:11:12.412 [main] INFO  listener.TestListener - Starting Test: verifySearchForWebDevelopmentCourses
-16:11:19.814 [main] INFO  listener.TestListener - Test successfully completed: verifySearchForWebDevelopmentCourses
-16:11:19.831 [main] INFO  listener.TestListener - Starting Test: verifyBeginnerLevel
-16:11:21.745 [main] INFO  listener.TestListener - Test successfully completed: verifyBeginnerLevel
-16:11:21.757 [main] INFO  listener.TestListener - Starting Test: verifyLevelExtracted
-16:11:23.018 [main] INFO  listener.TestListener - Test successfully completed: verifyLevelExtracted
-16:11:30.040 [main] INFO  listener.TestListener - Starting Test: verifyerrorMsg
-16:11:30.122 [main] INFO  listener.TestListener - Test successfully completed: verifyerrorMsg
-16:11:37.227 [main] INFO  listener.TestListener - Starting Test: verifyLanguageLevel
-16:11:38.899 [main] INFO  listener.TestListener - Test successfully completed: verifyLanguageLevel
-16:11:38.906 [main] INFO  listener.TestListener - Starting Test: verifyDurationOfCourse
-16:11:39.526 [main] INFO  listener.TestListener - Test successfully completed: verifyDurationOfCourse
-16:11:39.531 [main] INFO  listener.TestListener - Starting Test: verifyNamesExtracted
-16:11:39.664 [main] INFO  listener.TestListener - Test successfully completed: verifyNamesExtracted
-16:11:39.667 [main] INFO  listener.TestListener - Starting Test: verifyRatingExtracted
-16:11:39.781 [main] INFO  listener.TestListener - Test successfully completed: verifyRatingExtracted
-16:11:45.537 [main] INFO  listener.TestListener - Test Suite finished: Run1
+17:12:59.310 [main] INFO  listener.TestListener - Starting Test: verifyNamesExtracted
+17:12:59.391 [main] INFO  listener.TestListener - Test successfully completed: verifyNamesExtracted
+17:12:59.391 [main] INFO  listener.TestListener - Starting Test: verifyRatingExtracted
+17:12:59.506 [main] INFO  listener.TestListener - Test successfully completed: verifyRatingExtracted
+17:13:03.980 [main] INFO  listener.TestListener - Test Suite finished: Run1
