@@ -2,7 +2,7 @@
 
 <suite name = "Suite1">
     <listeners>
-        <listener class-name="Utilities.ExtentReportUtility"/>
+        <listener class-name="listener.TestListener"/>
     </listeners>
 
     <test name = "Run1">

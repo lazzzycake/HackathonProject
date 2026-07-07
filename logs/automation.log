@@ -1,55 +1,29 @@
-11:02:37.701 [main] INFO  listener.TestListener - test successfully completed :verifyFormFill
-11:02:37.787 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
-11:02:52.290 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageExtracted
-11:02:52.294 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
-11:03:00.463 [main] INFO  listener.TestListener - test successfully completed :verifySearchForWebDevelopmentCourses
-11:03:00.467 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
-11:03:02.472 [main] INFO  listener.TestListener - test successfully completed :verifyBeginnerLevel
-11:03:02.477 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
-11:03:03.295 [main] INFO  listener.TestListener - test successfully completed :verifyLevelExtracted
-11:03:08.719 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg
-11:03:08.765 [main] INFO  listener.TestListener - test successfully completed :verifyerrorMsg
-11:03:13.743 [main] INFO  listener.TestListener - starting Test :verifyLanguageLevel
-11:03:15.459 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageLevel
-11:03:15.464 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
-11:03:16.381 [main] INFO  listener.TestListener - test successfully completed :verifyDurationOfCourse
-11:03:16.384 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
-11:03:16.483 [main] INFO  listener.TestListener - test successfully completed :verifyNamesExtracted
-11:03:16.484 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
-11:03:16.552 [main] INFO  listener.TestListener - test successfully completed :verifyRatingExtracted
-15:21:07.441 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-15:21:20.433 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
-15:21:20.438 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
-15:21:32.493 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
-15:21:32.547 [main] INFO  listener.TestListener - test successfully completed :verifyEnterprise
-15:21:43.367 [main] INFO  listener.TestListener - starting Test :verifySearch
-15:21:57.182 [main] INFO  listener.TestListener - test successfully completed :verifySearch
-15:22:08.618 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
-15:22:08.948 [main] INFO  listener.TestListener - test successfully completed :verifyWebsiteLaunch
-15:22:08.967 [main] INFO  listener.TestListener - starting Test :verifyFormFill
-15:22:18.457 [main] INFO  listener.TestListener - test successfully completed :verifyFormFill
-15:22:18.477 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
-15:22:47.407 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageExtracted
-15:22:47.429 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
-15:23:01.011 [main] INFO  listener.TestListener - test successfully completed :verifySearchForWebDevelopmentCourses
-15:23:01.021 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
-15:23:06.564 [main] INFO  listener.TestListener - test successfully completed :verifyBeginnerLevel
-15:23:06.580 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
-15:23:08.345 [main] INFO  listener.TestListener - test successfully completed :verifyLevelExtracted
-15:23:17.412 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg
-15:23:17.532 [main] INFO  listener.TestListener - test successfully completed :verifyerrorMsg
-15:23:25.236 [main] INFO  listener.TestListener - starting Test :verifyLanguageLevel
-15:23:29.653 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageLevel
-15:23:29.660 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
-15:23:29.846 [main] INFO  listener.TestListener - test successfully completed :verifyDurationOfCourse
-15:23:29.850 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
-15:23:30.002 [main] INFO  listener.TestListener - test successfully completed :verifyNamesExtracted
-15:23:30.005 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
-15:23:30.159 [main] INFO  listener.TestListener - test successfully completed :verifyRatingExtracted
-15:40:44.785 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
-
-15:40:56.335 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
-15:41:12.061 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+16:10:13.740 [main] INFO  listener.TestListener - Starting Test: verifyEnterprise
+16:10:13.770 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+16:10:25.600 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+16:10:25.607 [main] INFO  listener.TestListener - Test successfully completed: verifyEnterprise
+16:10:33.836 [main] INFO  listener.TestListener - Starting Test: verifySearch
+16:10:42.034 [main] INFO  listener.TestListener - Test successfully completed: verifySearch
+16:10:50.547 [main] INFO  listener.TestListener - Starting Test: verifyWebsiteLaunch
+16:10:50.654 [main] INFO  listener.TestListener - Test successfully completed: verifyWebsiteLaunch
+16:10:50.662 [main] INFO  listener.TestListener - Starting Test: verifyFormFill
+16:10:56.168 [main] INFO  listener.TestListener - Test successfully completed: verifyFormFill
+16:10:56.182 [main] INFO  listener.TestListener - Starting Test: verifyLanguageExtracted
+16:11:12.406 [main] INFO  listener.TestListener - Test successfully completed: verifyLanguageExtracted
+16:11:12.412 [main] INFO  listener.TestListener - Starting Test: verifySearchForWebDevelopmentCourses
+16:11:19.814 [main] INFO  listener.TestListener - Test successfully completed: verifySearchForWebDevelopmentCourses
+16:11:19.831 [main] INFO  listener.TestListener - Starting Test: verifyBeginnerLevel
+16:11:21.745 [main] INFO  listener.TestListener - Test successfully completed: verifyBeginnerLevel
+16:11:21.757 [main] INFO  listener.TestListener - Starting Test: verifyLevelExtracted
+16:11:23.018 [main] INFO  listener.TestListener - Test successfully completed: verifyLevelExtracted
+16:11:30.040 [main] INFO  listener.TestListener - Starting Test: verifyerrorMsg
+16:11:30.122 [main] INFO  listener.TestListener - Test successfully completed: verifyerrorMsg
+16:11:37.227 [main] INFO  listener.TestListener - Starting Test: verifyLanguageLevel
+16:11:38.899 [main] INFO  listener.TestListener - Test successfully completed: verifyLanguageLevel
+16:11:38.906 [main] INFO  listener.TestListener - Starting Test: verifyDurationOfCourse
+16:11:39.526 [main] INFO  listener.TestListener - Test successfully completed: verifyDurationOfCourse
+16:11:39.531 [main] INFO  listener.TestListener - Starting Test: verifyNamesExtracted
+16:11:39.664 [main] INFO  listener.TestListener - Test successfully completed: verifyNamesExtracted
+16:11:39.667 [main] INFO  listener.TestListener - Starting Test: verifyRatingExtracted
+16:11:39.781 [main] INFO  listener.TestListener - Test successfully completed: verifyRatingExtracted
+16:11:45.537 [main] INFO  listener.TestListener - Test Suite finished: Run1

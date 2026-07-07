@@ -10,13 +10,15 @@ import java.io.IOException;
 
 public class ScreenShotUtil {
 
-    public static void captureScreenShot(WebDriver driver,String testName) throws IOException {
-
+    public static String captureScreenShot(WebDriver driver, String testName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
 
-        File destination = new File("./Screenshots/" + testName + "_" + System.currentTimeMillis() + ".png");
+        String destPath = System.getProperty("user.dir") + "/Screenshots/"
+                + testName + "_" + System.currentTimeMillis() + ".png";
+        File destination = new File(destPath);
         FileUtils.copyFile(source, destination);
 
+        return destPath;
     }
 }
