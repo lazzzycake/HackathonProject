@@ -1,0 +1,61 @@
+21:43:49.516 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
+21:43:49.538 [main] INFO  TestCases.SearchWebDevelopment - starting verifyRatingExtracted
+21:43:49.662 [main] INFO  TestCases.SearchWebDevelopment - verified verifyRatingExtracted
+21:43:49.662 [main] INFO  listener.TestListener - test successfully completed :verifyRatingExtracted
+10:30:44.980 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+10:30:54.389 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
+10:30:54.390 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+10:31:03.713 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+10:31:03.718 [main] INFO  listener.TestListener - test successfully completed :verifyEnterprise
+10:31:08.210 [main] INFO  listener.TestListener - starting Test :verifySearch
+10:31:15.194 [main] INFO  listener.TestListener - test successfully completed :verifySearch
+10:31:20.237 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
+10:31:20.416 [main] INFO  listener.TestListener - test successfully completed :verifyWebsiteLaunch
+10:31:20.424 [main] INFO  listener.TestListener - starting Test :verifyFormFill
+10:31:23.659 [main] INFO  listener.TestListener - test successfully completed :verifyFormFill
+10:31:23.667 [main] INFO  listener.TestListener - starting Test :verifyLanguageExtracted
+10:31:32.094 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageExtracted
+10:31:32.098 [main] INFO  listener.TestListener - starting Test :verifySearchForWebDevelopmentCourses
+10:31:38.636 [main] INFO  listener.TestListener - test successfully completed :verifySearchForWebDevelopmentCourses
+10:31:38.641 [main] INFO  listener.TestListener - starting Test :verifyBeginnerLevel
+10:31:40.238 [main] INFO  listener.TestListener - test successfully completed :verifyBeginnerLevel
+10:31:40.251 [main] INFO  listener.TestListener - starting Test :verifyLevelExtracted
+10:31:41.105 [main] INFO  listener.TestListener - test successfully completed :verifyLevelExtracted
+10:31:45.768 [main] INFO  listener.TestListener - starting Test :verifyerrorMsg
+10:31:45.816 [main] INFO  listener.TestListener - test successfully completed :verifyerrorMsg
+10:31:50.732 [main] INFO  listener.TestListener - starting Test :verifyLanguageLevel
+10:31:51.653 [main] INFO  listener.TestListener - test successfully completed :verifyLanguageLevel
+10:31:51.665 [main] INFO  listener.TestListener - starting Test :verifyDurationOfCourse
+10:31:52.614 [main] INFO  listener.TestListener - test successfully completed :verifyDurationOfCourse
+10:31:52.616 [main] INFO  listener.TestListener - starting Test :verifyNamesExtracted
+10:31:52.669 [main] INFO  listener.TestListener - test successfully completed :verifyNamesExtracted
+10:31:52.671 [main] INFO  listener.TestListener - starting Test :verifyRatingExtracted
+10:31:52.728 [main] INFO  listener.TestListener - test successfully completed :verifyRatingExtracted
+10:47:52.309 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+10:47:59.175 [TestNG-tests-1] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+10:48:01.314 [TestNG-tests-2] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+10:48:08.406 [TestNG-tests-1] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+10:48:09.655 [TestNG-tests-2] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+10:55:45.623 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\paralleltestng.xml
+
+10:55:52.662 [TestNG-tests-2] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+10:56:00.968 [TestNG-tests-2] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+10:56:02.206 [TestNG-tests-1] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+10:56:16.181 [TestNG-tests-1] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+11:01:58.550 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\2497821\IdeaProjects\HackathonProject\mastertestng.xml
+
+11:02:04.573 [main] INFO  listener.TestListener - starting Test :verifyEnterprise
+11:02:04.577 [main] INFO  TestCases.EnterpriseForm - starting verifyEnterprise
+11:02:13.385 [main] INFO  TestCases.EnterpriseForm - verified verifyEnterprise
+11:02:13.389 [main] INFO  listener.TestListener - test successfully completed :verifyEnterprise
+11:02:18.834 [main] INFO  listener.TestListener - starting Test :verifySearch
+11:02:25.948 [main] INFO  listener.TestListener - test successfully completed :verifySearch
+11:02:31.499 [main] INFO  listener.TestListener - starting Test :verifyWebsiteLaunch
+11:02:31.523 [main] INFO  listener.TestListener - test successfully completed :verifyWebsiteLaunch
+11:02:31.531 [main] INFO  listener.TestListener - starting Test :verifyFormFill

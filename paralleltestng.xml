@@ -7,6 +7,8 @@
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="TestCases.SearchWebDevelopment"/>
+            <class name="TestCases.EnterpriseForm"/>
+            <class name="TestCases.ExtractAllLanguages"/>
         </classes>
     </test>
 
@@ -15,6 +17,8 @@
         <parameter name="browser" value="Edge"/>
         <classes>
             <class name="TestCases.SearchWebDevelopment"/>
+            <class name="TestCases.EnterpriseForm"/>
+            <class name="TestCases.ExtractAllLanguages"/>
         </classes>
     </test>
 </suite>
